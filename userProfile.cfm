@@ -115,84 +115,84 @@
   		<cfform name="userProfile" action="" onsubmit="return validateForm()" method="post">
   			<div class="border border-3 border-secondary rounded">
 	    		<div class="row justify-content-md-center p-1">
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					First Name: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="text" class="form-control" id="firstName" placeholder="Enter First Name" name="firstName" value="#firstName#">
 	  				</div>
-					<div class="col col-lg-2 text-right font-weight-bold">
+					<div class="col-lg-2 text-left font-weight-bold">
 	  					Last Name: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="text" class="form-control" id="lastName" placeholder="Enter Last Name" name="lastName" value="#lastName#">
 					</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					Email: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="email" class="form-control" id="email" placeholder="Enter Email" name="email" value="#Email#" readonly="yes">
 	  				</div>
-					<div class="col col-lg-2 text-right font-weight-bold">
+					<div class="col-lg-2 text-left font-weight-bold">
 	  					Phone Number:
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="tel" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber" value="#phoneNumber#">
 					</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					Address:
 	  				</div>
-	  				<div class="col col-lg-10">
+	  				<div class="col-lg-10">
 	  					<cfinput type="text" class="form-control" id="Address" placeholder="Enter Address" name="Address" value="#Address#">
 	  				</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					City:
 	  				</div>
-	  				<div class="col col-lg-2">
+	  				<div class="col-lg-2">
 	  					<cfinput type="text" class="form-control" id="City" placeholder="Enter City" name="City" value="#City#">
 	  				</div>
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					State:
 	  				</div>
-	  				<div class="col col-lg-2">
+	  				<div class="col-lg-2">
 	  					<cfinput type="text" class="form-control" id="State" placeholder="Enter State" name="State" value="#State#">
 	  				</div>
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					Zip Code:
 	  				</div>
-	  				<div class="col col-lg-2">
+	  				<div class="col-lg-2">
 	  					<cfinput type="text" class="form-control" id="Zip" placeholder="Enter Zip" name="Zip" value="#zipCode#">
 	  				</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	    			<div class="col col-lg-2 text-right font-weight-bold">
+	    			<div class="col-lg-2 text-left font-weight-bold">
 	  					Gender:
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfselect name="Gender" class="form-control">
 	  						<option value="Male" <cfif GenderVar EQ "Male">selected</cfif>>Male</option>
 	  						<option value="Female" <cfif GenderVar EQ "Female">selected</cfif>>Female</option>
 	  						<option value="N/A" <cfif GenderVar EQ "N/A">selected</cfif>>N/A</option>
 	  					</cfselect>
 	  				</div>
-					<div class="col col-lg-2 text-right font-weight-bold">
+					<div class="col-lg-2 text-left font-weight-bold">
 	  					Birth Date:
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="date" class="form-control" id="birthDate" placeholder="Enter Birth Date" name="birthDate" value="#BirthDate#">
 					</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	    			<div class="col col-lg-2 text-right font-weight-bold">
+	    			<div class="col-lg-2 text-left font-weight-bold">
 	  					Profile Color:
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfselect name="profileColor" class="form-control">
 	  						<option value="primary" <cfif profileColorVar EQ "primary">selected</cfif>>Blue</option>
 	  						<option value="danger" <cfif profileColorVar EQ "danger">selected</cfif>>Red</option>
@@ -203,7 +203,7 @@
 					</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	    			<div class="col col-lg-12 text-center">
+	    			<div class="col-lg-12 text-center">
 	    				<cfoutput>
 	    					<button type="submit" class="btn btn-#defaultColor#">Update Profile</button>
 	    					<a href="changePassword.cfm" class="btn btn-#defaultColor#">Change Password</a>

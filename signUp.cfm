@@ -159,51 +159,51 @@
   		<!--- form to setup a new user --->
   		<cfform name="signUp" action="" onsubmit="return validateForm()" method="post">
   			<div class="border border-3 border-secondary rounded">
-	    		<div class="row justify-content-md-center p-1">
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	    		<div class="row">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					First Name: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="text" class="form-control" id="firstName" placeholder="Enter First Name" name="firstName" value="#firstName#">
 	  				</div>
-					<div class="col col-lg-2 text-right font-weight-bold">
+					<div class="col-lg-2 text-left font-weight-bold">
 	  					Last Name: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="text" class="form-control" id="lastName" placeholder="Enter Last Name" name="lastName" value="#lastName#">
 					</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					Email: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="email" class="form-control" id="email" placeholder="Enter Email" name="email" value="#Email#">
 	  				</div>
-					<div class="col col-lg-2 text-right font-weight-bold">
+					<div class="col-lg-2 text-left font-weight-bold">
 	  					Phone Number:
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="tel" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber" value="#phoneNumber#">
 					</div>
 	    		</div>
 	    		<div class="row justify-content-md-center p-1">
-	  				<div class="col col-lg-2 text-right font-weight-bold">
+	  				<div class="col-lg-2 text-left font-weight-bold">
 	  					Password: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="password" class="form-control" id="Password" placeholder="Enter Password" name="Password" value="#Password#">
 	  				</div>
-					<div class="col col-lg-2 text-right font-weight-bold">
+					<div class="col-lg-2 text-left font-weight-bold">
 	  					Confirm Password: <span class="text-danger">*</span>
 	  				</div>
-	  				<div class="col col-lg-4">
+	  				<div class="col-lg-4">
 	  					<cfinput type="password" class="form-control" id="confirmPWD" placeholder="Confirm Password" name="confirmPWD" value="#confirmPassword#">
 					</div>
 	    		</div>
 	    	
 	    		<div class="row justify-content-md-center p-1">
-	    			<div class="col col-lg-12 text-center">
+	    			<div class="col-lg-12 text-center">
 	    				<button type="submit" class="btn btn-primary">Create Profile</button>
 	    				<a href="index.cfm" class="btn btn-primary">Log In</a>
 	    			</div>
